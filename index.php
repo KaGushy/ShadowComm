@@ -73,7 +73,7 @@
 		</section>
 
 		<div id="cookie-banner">
-        <p>🍪 ShadowCom utilise des cookies pour garantir la sécurité de vos échanges et améliorer votre expérience. 
+        <p> ShadowCom utilise des cookies pour garantir la sécurité et la discrétion de vos échanges. 
             <a href="politique-confidentialite.php">En savoir plus</a>
         </p>
         <button id="accept-cookies">Accepter</button>
@@ -85,19 +85,13 @@
             const banner = document.getElementById("cookie-banner");
             const acceptBtn = document.getElementById("accept-cookies");
             const declineBtn = document.getElementById("decline-cookies");
-
-            // Vérifie si l'utilisateur a déjà donné son choix
             if (localStorage.getItem("cookiesAccepted") !== null) {
                 banner.style.display = "none";
             }
-
-            // Accepter les cookies
             acceptBtn.addEventListener("click", function() {
                 localStorage.setItem("cookiesAccepted", "true");
                 banner.style.display = "none";
             });
-
-            // Refuser les cookies
             declineBtn.addEventListener("click", function() {
                 localStorage.setItem("cookiesAccepted", "false");
                 banner.style.display = "none";

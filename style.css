@@ -186,17 +186,14 @@ section {
     align-items: center;
     gap: 15px;
 }
-
 #cookie-banner p {
     margin: 0;
     font-size: 1em;
 }
-
 #cookie-banner a {
     color: #e63946;
     text-decoration: underline;
 }
-
 #cookie-banner button {
     background-color: #e63946;
     color: #f1faee;
@@ -206,7 +203,6 @@ section {
     cursor: pointer;
     font-size: 1em;
 }
-
 #cookie-banner button:hover {
     background-color: #f1faee;
     color: #1d1d1d;
